@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            border: 1px solid #000;
+            height: 100vh;
+        }
+
+        #month_pre_next {
+            /* border: 1px solid rgb(255, 0, 0); */
+            text-align: center;
+        }
+
+        #Date_Section_Main {
+            /* border: 1px solid rgb(17, 0, 255); */
+            display: flex;
+            
+            /* justify-content: flex-start; */
+        }
+        .Date_title {
+            /* border: 1px solid rgb(7, 7, 7); */
+            width: 100px;
+        }
+        .Date_Section {
+            /* border: 1px solid rgb(121, 0, 0); */
+            display: flex;
+        }
+        .Date {
+            /* border: 1px solid rgb(157, 0, 255); */
+            text-align: center;
+            width: 30px;
+            margin: 0px 0px 0px 6px;
+        }
+        #Emp_main_Section {
+            /* border: 1px solid rgb(17, 0, 255); */
+            display: flex;
+            
+            /* justify-content: flex-start; */
+        }
+        .Emp_title {
+            /* border: 1px solid rgb(7, 7, 7); */
+            width: 100px;
+        }
+        .Emp_record_Section {
+            /* border: 1px solid rgb(121, 0, 0); */
+            display: flex;
+        }
+        .emp_status {
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            background-color: green;
+            text-align: center;
+            width: 25px;
+            color: #fff;
+            margin: 0px 0px 0px 9px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="month_pre_next">
+            <span>+</span>
+            <span>Dec 2022</span>
+            <span>-</span>
+        </div>
+        <div id="Date_Section_Main">
+            <div class="Date_title">Employee/Date</div>
+            <div class="Date_Section">
+                <div class="Date">Dec<br>01</div>
+                <div class="Date">Dec<br>02</div>
+                <div class="Date">Dec<br>03</div>
+                <div class="Date">Dec<br>04</div>
+                <div class="Date">Dec<br>05</div>
+                <div class="Date">Dec<br>06</div>
+                <div class="Date">Dec<br>07</div>
+                <div class="Date">Dec<br>08</div>
+                <div class="Date">Dec<br>09</div>
+                <div class="Date">Dec<br>10</div>
+                <div class="Date">Dec<br>11</div>
+                <div class="Date">Dec<br>12</div>
+                <div class="Date">Dec<br>13</div>
+                <div class="Date">Dec<br>14</div>
+                <div class="Date">Dec<br>15</div>
+                <div class="Date">Dec<br>16</div>
+                <div class="Date">Dec<br>17</div>
+                <div class="Date">Dec<br>18</div>
+                <div class="Date">Dec<br>19</div>
+                <div class="Date">Dec<br>20</div>
+                <div class="Date">Dec<br>21</div>
+                <div class="Date">Dec<br>22</div>
+                <div class="Date">Dec<br>23</div>
+                <div class="Date">Dec<br>24</div>
+                <div class="Date">Dec<br>25</div>
+                <div class="Date">Dec<br>26</div>
+                <div class="Date">Dec<br>27</div>
+                <div class="Date">Dec<br>28</div>
+                <div class="Date">Dec<br>29</div>
+                <div class="Date">Dec<br>30</div>
+                <div class="Date">Dec<br>31</div>
+            </div>
+        </div>
+        <div id="Emp_main_Section">
+            <div class="Emp_title">Employee 1</div>
+            <div class="Emp_record_Section">
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+            </div>
+        </div>
+        <div id="Emp_main_Section">
+            <div class="Emp_title">Employee 2</div>
+            <div class="Emp_record_Section">
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+            </div>
+        </div>
+        <div id="Emp_main_Section">
+            <div class="Emp_title">Employee 3</div>
+            <div class="Emp_record_Section">
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+            </div>
+        </div>
+        <div id="Emp_main_Section">
+            <div class="Emp_title">Employee 4</div>
+            <div class="Emp_record_Section">
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">W</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">P</div>
+                <div class="emp_status">W</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
