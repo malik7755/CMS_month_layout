@@ -2,6 +2,7 @@
     box-sizing: 0;
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 #main {
