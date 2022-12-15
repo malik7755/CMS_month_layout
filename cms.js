@@ -58,3 +58,20 @@ function previousMonth(month){
     if(month=="Nov") return "Oct" 
     if(month=="Dec") return "Nov" 
 }
+
+
+function changeBorder(){
+    let empStatus = document.querySelectorAll(".emp_status");
+     for(let i=0;i<empStatus.length;i++){
+        if(empStatus[i].innerText=="W"){
+            empStatus[i].style.borderBottom ="gray 3px solid"; 
+        }
+
+        if(empStatus[i].innerText=="O"){
+            empStatus[i].style.borderBottom ="red 3px solid"; 
+        }
+     }
+}
+
+
+changeBorder();

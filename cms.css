@@ -9,6 +9,9 @@
     /* border: 1px solid #000; */
     /* padding: 5%; */
     /* height: 100vh; */
+    height: 90vh;
+    border: 2px solid black;
+    overflow-y:scroll;
   
 }
 
@@ -94,12 +97,28 @@
     display: flex;
 }
 .emp_status {
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-bottom: green 3px solid ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+
     /* border-radius: 50%; */
-    background-color: green;
+    /* background-color: green; */
     text-align: center;
     width: 25px;
-    color: #fff;
-    border: 1px solid black;
-    margin: 0px 0px 0px 9px;
+    color: black;
+    /* border: 1px solid black; */
+    margin: 0px 0px 0px 11px;
 }
+
+.uk{
+    border-bottom: #fdcb6e 5px solid;
+}
+
+.us{
+    border-bottom:#0984e3 5px solid;
+}
+
+
+@media screen and (min-width: 1400px) {
+ 
+  }
