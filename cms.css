@@ -1,0 +1,97 @@
+* {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    border: 1px solid #000;
+    /* padding: 5%; */
+    /* height: 100vh; */
+  
+}
+
+.arrow{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.monthLabel{
+    font-size: 1.5rem;
+    background-color: #2d3436;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+   
+}
+
+#month_pre_next {
+    /* border: 1px solid rgb(255, 0, 0); */
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+#Date_Section_Main {
+    margin-bottom: 2%;
+    /* border: 1px solid rgb(17, 0, 255); */
+    display: flex;
+    
+    /* justify-content: flex-start; */
+}
+.Date_title {
+    /* border: 1px solid rgb(7, 7, 7); */
+    width: 203px;
+    text-align: center;
+    background-color: #2d3436;
+    color: white;
+    margin-left: 10px;
+    line-height: 2;
+    border-radius: 5px;
+}
+.Date_Section {
+    /* border: 1px solid rgb(121, 0, 0); */
+    display: flex;
+}
+.Date {
+    /* border: 1px solid rgb(157, 0, 255); */
+    text-align: center;
+    width: 30px;
+    margin: 0px 0px 0px 6px;
+    margin: 0px 0px 0px 4px;
+    border: 1px solid black;
+    background-color: #2d3436;
+    color: white;
+    border-radius: 5px;
+}
+.emp_main_Section {
+    /* border: 1px solid rgb(17, 0, 255); */
+    display: flex;
+    margin-bottom: 0.5%;
+    
+    /* justify-content: flex-start; */
+}
+.Emp_title {
+    /* border: 1px solid rgb(7, 7, 7); */
+    width: 200px;
+    margin-left: 10px;
+    border: 2px solid black;
+    background-color: darkcyan;
+    background-color: #2d3436;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.Emp_record_Section {
+    /* border: 1px solid rgb(121, 0, 0); */
+    display: flex;
+}
+.emp_status {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: green;
+    text-align: center;
+    width: 25px;
+    color: #fff;
+    margin: 0px 0px 0px 9px;
+}
