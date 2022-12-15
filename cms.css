@@ -4,14 +4,37 @@
     padding: 0;
     user-select: none;
 }
+.usInfo,.ukInfo,.present,.out_office,.weekend{
+    margin-left: 2%;
+}
+
+.usInfo{
+    border-left: #f2fa00 solid 4px;
+
+}
+.ukInfo{
+    border-left:  #406cff solid;
+}
+.present{
+    border-left:  #0ac90a solid;
+}
+.out_office{
+    border-left:  #fe4200d1 solid;
+
+}
+.weekend{
+    border-left:  #e8c6c6 solid;
+
+}
 
 #main {
     /* border: 1px solid #000; */
     /* padding: 5%; */
     /* height: 100vh; */
     height: 90vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     overflow-y:scroll;
+    margin-bottom: 1%;
   
 }
 
@@ -108,7 +131,7 @@
 }
 .emp_status {
     /* border: 1px solid rgb(255, 255, 255); */
-    border-bottom: green 3px solid ;
+    border-bottom:  #0ac90a 4px solid ;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
 
     /* border-radius: 50%; */
@@ -121,11 +144,11 @@
 }
 
 .uk{
-    border-bottom: #fdcb6e 5px solid;
+    border-bottom: #406cff 5px solid;
 }
 
 .us{
-    border-bottom:#0984e3 5px solid;
+    border-bottom:#f2fa00 5px solid;
 }
 
 

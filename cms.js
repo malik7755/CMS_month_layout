@@ -2,9 +2,10 @@ let leftArrow = document.querySelector(".leftArrow");
 let rightArrow = document.querySelector(".rightArrow");
 let currMonth = document.querySelector(".Date").children[0].innerText;
 let monthLabel = document.querySelector(".monthLabel");
+const d = new Date();
+let year = d.getFullYear();
 leftArrow.addEventListener("click",handleLeftArrow);
 rightArrow.addEventListener("click",handleRightArrow);
-let year = 2022;
 
 
 function handleLeftArrow(){
@@ -13,6 +14,7 @@ function handleLeftArrow(){
      date[i].children[0].innerText = previousMonth(currMonth);
     }
     currMonth = previousMonth(currMonth);
+   if(currMonth=="Dec") year = year-1;
     monthLabel.innerText = currMonth+" "+year;
 }
 
@@ -22,6 +24,7 @@ let date = document.querySelectorAll(".Date");
     date[i].children[0].innerText = nextMonth(currMonth);
    }
    currMonth = nextMonth(currMonth);
+   if(currMonth=="Jan") year = year+1;
    monthLabel.innerText = currMonth+" "+year;
 
 }
@@ -40,7 +43,7 @@ function nextMonth(month){
     if(month=="Sep") return "Oct" 
     if(month=="Oct") return "Nov" 
     if(month=="Nov") return "Dec" 
-    if(month=="Dec") return "Jan" 
+    if(month=="Dec") return "Jan"
 }
 
 
@@ -64,11 +67,11 @@ function changeBorder(){
     let empStatus = document.querySelectorAll(".emp_status");
      for(let i=0;i<empStatus.length;i++){
         if(empStatus[i].innerText=="W"){
-            empStatus[i].style.borderBottom ="gray 3px solid"; 
+            empStatus[i].style.borderBottom =" #e8c6c6 4px solid"; 
         }
 
         if(empStatus[i].innerText=="O"){
-            empStatus[i].style.borderBottom ="red 3px solid"; 
+            empStatus[i].style.borderBottom ="#fe4200d1 4px solid"; 
         }
      }
 }
