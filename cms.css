@@ -51,6 +51,7 @@
     line-height: 2.5;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
 }
 .Date_Section {
     /* border: 1px solid rgb(121, 0, 0); */
@@ -66,11 +67,12 @@
     color: black;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
 }
 .emp_main_Section {
     /* border: 1px solid rgb(17, 0, 255); */
     display: flex;
-    margin-bottom: 0.5%;
+    margin-bottom: 2%;
     
     /* justify-content: flex-start; */
 }
