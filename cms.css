@@ -214,9 +214,7 @@
   }
 
 
-@media screen and (min-width: 1400px) {
- 
-  }
+
 
 
 @media screen and (max-width:600px){
@@ -255,5 +253,15 @@
         padding: 0 5px;
     }
 
+}
+
+
+@media screen and (min-width: 1400px) {
+        .emp_status{
+            width: 43px;
+        }
+        .Date{
+            width: 48px;
+        }
 }
 
