@@ -250,8 +250,9 @@
     }
 
     .mobDate span:nth-child(3){
-        margin-left: 35%;
+        margin-left: 48%;
         border-bottom: green 4px solid;
+        padding: 0 5px;
     }
 
 }
