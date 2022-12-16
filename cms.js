@@ -8,10 +8,16 @@ leftArrow.addEventListener("click",handleLeftArrow);
 rightArrow.addEventListener("click",handleRightArrow);
 
 
+
 function handleLeftArrow(){
     let date = document.querySelectorAll(".Date");
     for(let i=0;i<date.length;i++){
-     date[i].children[0].innerText = previousMonth(currMonth);
+        date[i].children[0].innerText = previousMonth(currMonth);
+    }
+    let mobMonth = document.querySelectorAll(".mobDate")
+
+    for(let i=0;i<mobMonth.length;i++){
+        mobMonth[i].children[0].innerText = previousMonth(currMonth);
     }
     currMonth = previousMonth(currMonth);
    if(currMonth=="Dec") year = year-1;
@@ -20,9 +26,16 @@ function handleLeftArrow(){
 
 function handleRightArrow(){
 let date = document.querySelectorAll(".Date");
+
    for(let i=0;i<date.length;i++){
     date[i].children[0].innerText = nextMonth(currMonth);
    }
+
+   let mobMonth = document.querySelectorAll(".mobDate")
+
+    for(let i=0;i<mobMonth.length;i++){
+        mobMonth[i].children[0].innerText = nextMonth(currMonth);
+    }
    currMonth = nextMonth(currMonth);
    if(currMonth=="Jan") year = year+1;
    monthLabel.innerText = currMonth+" "+year;
@@ -65,6 +78,8 @@ function previousMonth(month){
 
 function changeBorder(){
     let empStatus = document.querySelectorAll(".emp_status");
+    let mobDate = document.querySelectorAll(".mobDate");
+
      for(let i=0;i<empStatus.length;i++){
         if(empStatus[i].innerText=="W"){
             empStatus[i].style.borderBottom =" #e8c6c6 4px solid"; 
@@ -73,8 +88,56 @@ function changeBorder(){
         if(empStatus[i].innerText=="O"){
             empStatus[i].style.borderBottom ="#fe4200d1 4px solid"; 
         }
-     }
+    }
+
+
+    for(let i=0;i<mobDate.length;i++){
+        console.log(mobDate[i].children[2].innerText);
+        if(mobDate[i].children[2].innerText == " W"){
+            mobDate[i].children[2].style.borderBottom = "#e8c6c6 4px solid";
+        }
+
+        if(mobDate[i].children[2].innerText == " O"){
+            mobDate[i].children[2].style.borderBottom = "#fe4200d1 4px solid";
+        }
+    }
+
+
 }
 
 
 changeBorder();
+
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction(num) {
+    console.log(num)
+    let myDropdown = document.querySelectorAll(".myDropdown");
+    // document.querySelectorAll(".myDropdown")[num].classList.toggle("show");
+    for(let i=0;i<myDropdown.length;i++){
+        if(i==num){
+            myDropdown[i].classList.toggle("show");
+        }else{
+            myDropdown[i].classList.remove("show");
+        }
+    }
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+
+  
