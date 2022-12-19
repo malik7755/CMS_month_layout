@@ -73,15 +73,17 @@
 }
 
 #Date_Section_Main {
+    /* border:2px solid black; */
     margin-bottom: 2%;
     /* border: 1px solid rgb(17, 0, 255); */
     display: flex;
     
-    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
 }
 .Date_title {
     /* border: 1px solid rgb(7, 7, 7); */
-    width: 203px;
+
+    width: 15.5%;
     text-align: center;
    
     color: black;
@@ -90,17 +92,21 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: bold;
+    margin-right: 20px;
 }
 .Date_Section {
     /* border: 1px solid rgb(121, 0, 0); */
     display: flex;
+    justify-content: space-around;
+    width: 80%;
 
 }
 .Date {
     /* border: 1px solid rgb(157, 0, 255); */
     text-align: center;
-    width: 30px;
-    margin: 0px 0px 0px 6px;
+    border: 2px solid whitesmoke;
+    /* width: 30px; */
+    /* margin: 0px 0px 0px 2.2%; */
   
    
     color: black;
@@ -119,6 +125,7 @@
 .Emp_title {
     /* border: 1px solid rgb(7, 7, 7); */
     width: 200px;
+    width: 15.5%;
     height: 20px;
     margin-left: 10px;
     /* border: 2px solid black; */
@@ -128,10 +135,14 @@
     text-align: center;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 20px;
 }
 .Emp_record_Section {
     /* border: 1px solid rgb(121, 0, 0); */
     display: flex;
+    /* border: 1px solid black; */
+    width: 80%;
+    justify-content: space-around;
 }
 .emp_status {
     /* border: 1px solid rgb(255, 255, 255); */
@@ -142,9 +153,9 @@
     /* background-color: green; */
     text-align: center;
     width: 25px;
+    width: 2%;
     color: black;
     /* border: 1px solid black; */
-    margin: 0px 0px 0px 11px;
 }
 
 .uk{
@@ -221,7 +232,9 @@
     .emp_main_Section{
         display: none;
     }
-
+    .Emp_title{
+        width: 200px;
+    }
     #Date_Section_Main{
         display: none;
     }
@@ -256,12 +269,12 @@
 }
 
 
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
         .emp_status{
             width: 43px;
         }
         .Date{
             width: 48px;
         }
-}
+} */
 
