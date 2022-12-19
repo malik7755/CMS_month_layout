@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav{
+    /* border: 2px solid black; */
+    height: 80px;
+    background-color: #dfe6e9;
+    display: flex;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+.navLogo img{
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.navLogo{
+    height: 50px;
+    width: 50px;
+    /* margin-top: 20px; */
+    /* border: 2px solid black; */
+    margin-left: 2%;
+
+}
+
+.cmsTag{
+    /* border: 2px solid black; */
+    width: 5%;
+    height: 35%;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 2%;
+    font-size: 1.5rem;
+}
+
+.btnDiv{
+    /* border: 2px solid black; */
+    width: 40%;
+    margin-left: 60%;
+    /* margin-right: 1%; */
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navBtn{
+    border:none;
+    background-color:skyblue;
+    color: black;
+    font-weight: bolder;
+    height:50%;
+    margin-top: 20px;
+    padding: 1% 3%;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.navBtn a {
+    text-decoration: none;
+    color: black;
+}
+
+#piechart{
+/* border: 2px solid black; */
+
+margin-left: 5%;
+margin-top: 5%;
+}
+
+
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 100%;
+    width: 155%;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  .homeCont{
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .absentBtn{
+    /* margin-left: 80%; */
+    margin-top: 100%;
+    border-radius: 5px;
+    background-color: #dc3912;
+  }
+
+  .absentBtn:hover, .absentBtn:focus {
+    background-color: #f1390b;
+  }
+  .presentBtn{
+    margin-top: 100%;
+    border-radius: 5px;
+  }
+
+  .dropdown-content{
+    width: 150px;
+  }
+
+  #piechart{
+    width: 20%;
+  }
+
+  #myDropdown{
+  width: 152%;
+  }
+  #myDropdown1{
+    width: 152%;
+    }
+
+
+    @media screen and  (max-width:600px) {
+        .homeCont{
+            display: block;
+            /* border: 2px solid black; */
+
+        }
+
+        .presentBtn{
+            /* margin-top: 50%; */
+            border-radius: 5px;
+          }
+
+          .absentBtn{
+            margin-left: 75%;
+          }
+
+          #myDropdown1{
+            margin-left: 75%;
+        
+            }
+
+            .btnDiv{
+                margin-left: 30%;
+                width: 49%;
+            }
+            .nav{
+                width: 130%;
+            }
+            .cmsTag{
+                margin-top: 6%;
+            }
+        
+    }
