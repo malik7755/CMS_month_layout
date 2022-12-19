@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Month layout</title>
+    <link rel="stylesheet" href="cmsMonth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="month_pre_next">
+        <span><i class="fa-solid fa-chevron-left arrow leftArrow"></i></span>
+        <span class="monthLabel">Dec 2022</span>
+        <span><i class="fa-solid fa-chevron-right arrow rightArrow"></i></span>
+      </div>
+
+      <!-- --------------------------------Mobile view------------------------------->
+      <div class="smallScr">
+        <div class="dropdown">
+          <button onclick="myFunction(0)" class="dropbtn Emp_title uk">
+            Dharmendra Kumar
+          </button>
+          <div  class="dropdown-content myDropdown">
+            
+             <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 02 </span><span> W</span></a>
+            <a class="mobDate"><span>Dec</span><span> 03 </span><span> O</span></a>
+            <a class="mobDate"><span>Dec</span><span> 04 </span><span> W</span></a>
+            <a class="mobDate"><span>Dec</span><span> 05 </span><span> O</span></a>
+            <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 08 </span><span> O</span></a>
+            <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 13 </span><span> O</span></a>
+            <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="myFunction(1)" class="dropbtn Emp_title us">
+            Anjali Varun
+          </button>
+          <div  class="dropdown-content myDropdown">
+            <a class="mobDate"><span>Dec</span><span> 01 </span><span> W</span></a>
+            <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="myFunction(2)" class="dropbtn Emp_title uk">
+            Aditya Malik Gupta
+          </button>
+          <div  class="dropdown-content myDropdown">
+             <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 02 </span><span> O</span></a>
+            <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="myFunction(3)" class="dropbtn Emp_title uk">
+            Ahsan Khan
+          </button>
+          <div  class="dropdown-content myDropdown">
+             <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="myFunction(4)" class="dropbtn Emp_title uk">
+            Sangam Dwivedi
+          </button>
+          <div  class="dropdown-content myDropdown">
+             <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+            <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction(5)" class="dropbtn Emp_title uk">
+              Diksha Shukla
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(6)" class="dropbtn Emp_title us">
+            Chandani Kukreja
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(7)" class="dropbtn Emp_title us">
+              Indu Rani
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(8)" class="dropbtn Emp_title us">
+              Shivani Gupta
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(9)" class="dropbtn Emp_title us">
+              Anushka Verma
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(10)" class="dropbtn Emp_title uk">
+              Pushpendra Pundir
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(11)" class="dropbtn Emp_title us">
+              Harsh Goel
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(12)" class="dropbtn Emp_title uk">
+            Santosh Yadav
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(13)" class="dropbtn Emp_title us">
+             Fazlur Rahman
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(14)" class="dropbtn Emp_title us">
+              Sachin Katiyar
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(15)" class="dropbtn Emp_title us">
+              Prabhat Kumar
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(16)" class="dropbtn Emp_title uk">
+              Vishal Gupta
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(17)" class="dropbtn Emp_title uk">
+              Fahad Mansori
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(18)" class="dropbtn Emp_title uk">
+              Rishabh Bisht
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(19)" class="dropbtn Emp_title uk">
+              Dilip Kumar Gupta
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(20)" class="dropbtn Emp_title uk">
+              Ashwani Singh
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(21)" class="dropbtn Emp_title uk">
+              Anshika Sharma
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(22)" class="dropbtn Emp_title uk">
+              Jyoti Kumari
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(23)" class="dropbtn Emp_title uk">
+              Aditay Kumar
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(24)" class="dropbtn Emp_title uk">
+              Kalpana Dubey
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div> <div class="dropdown">
+            <button onclick="myFunction(25)" class="dropbtn Emp_title uk">
+              Anuj Ahlawat
+            </button>
+            <div  class="dropdown-content myDropdown">
+               <a class="mobDate"><span>Dec</span><span> 01 </span><span>P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 02 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 03 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 04 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 05 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 06 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 07 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 08 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 09 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 10 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 11 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 12 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 13 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 14 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 15 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 16 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 17 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 18 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 19 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 20 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 21 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 22 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 23 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 24 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 25 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 26 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 27 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 28 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 29 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 30 </span><span> P</span></a>
+              <a class="mobDate"><span>Dec</span><span> 31 </span><span> P</span></a>
+            </div>
+          </div>
+        
+      </div>
+
+      <!----------------------------------- Mobile view end here ------------------->
+
+      <div id="Date_Section_Main">
+        <div class="Date_title">Employee/Date</div>
+        <div class="Date_Section">
+          <div class="Date"><span>Dec</span><br />01</div>
+          <div class="Date"><span>Dec</span><br />02</div>
+          <div class="Date"><span>Dec</span><br />03</div>
+          <div class="Date"><span>Dec</span><br />04</div>
+          <div class="Date"><span>Dec</span><br />05</div>
+          <div class="Date"><span>Dec</span><br />06</div>
+          <div class="Date"><span>Dec</span><br />07</div>
+          <div class="Date"><span>Dec</span><br />08</div>
+          <div class="Date"><span>Dec</span><br />09</div>
+          <div class="Date"><span>Dec</span><br />10</div>
+          <div class="Date"><span>Dec</span><br />11</div>
+          <div class="Date"><span>Dec</span><br />12</div>
+          <div class="Date"><span>Dec</span><br />13</div>
+          <div class="Date"><span>Dec</span><br />14</div>
+          <div class="Date"><span>Dec</span><br />15</div>
+          <div class="Date"><span>Dec</span><br />16</div>
+          <div class="Date"><span>Dec</span><br />17</div>
+          <div class="Date"><span>Dec</span><br />18</div>
+          <div class="Date"><span>Dec</span><br />19</div>
+          <div class="Date"><span>Dec</span><br />20</div>
+          <div class="Date"><span>Dec</span><br />21</div>
+          <div class="Date"><span>Dec</span><br />22</div>
+          <div class="Date"><span>Dec</span><br />23</div>
+          <div class="Date"><span>Dec</span><br />24</div>
+          <div class="Date"><span>Dec</span><br />25</div>
+          <div class="Date"><span>Dec</span><br />26</div>
+          <div class="Date"><span>Dec</span><br />27</div>
+          <div class="Date"><span>Dec</span><br />28</div>
+          <div class="Date"><span>Dec</span><br />29</div>
+          <div class="Date"><span>Dec</span><br />30</div>
+          <div class="Date"><span>Dec</span><br />31</div>
+        </div>
+      </div>
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Dharmendra Kumar</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Anjali Varun</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Aditya Malik Gupta</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Ahsan Khan</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Sangam Dwivedi</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Diksha Shukla</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Chandani Kukreja</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Indu Rani</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Shivani Gupta</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Anushka Verma</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Pushpendra Pundir</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">O</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Harsh Goel</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Santosh Yadav</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Fazlur Rahman</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Sachin Katiyar</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Prabhat Kumar</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Vishal Gupta</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Fahad Mansori</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Rishabh Bisht</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Dilip Kumar Gupta</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Ashwani Singh</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Anshika Sharma</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Jyoti Kumari</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Aditay Kumar</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+      <div class="emp_main_Section">
+        <div class="Emp_title us">Kalpana Dubey</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+
+      <div class="emp_main_Section">
+        <div class="Emp_title uk">Anuj Ahlawat</div>
+        <div class="Emp_record_Section">
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">W</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">P</div>
+          <div class="emp_status">W</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <span class="usInfo">US Shift</span>
+      <span class="ukInfo">UK Shift</span>
+      <span class="present">Present</span>
+      <span class="out_office">Out of Office</span>
+      <span class="weekend">Weekend</span>
+    </div>
+    <script src="cmsMonth.js"></script>
+  </body>
+</html>
