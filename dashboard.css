@@ -105,12 +105,12 @@
 #container{
     display: flex;
 }
-#main::-webkit-scrollbar ,.smallScr::-webkit-scrollbar{
+#main::-webkit-scrollbar ,.smallScr::-webkit-scrollbar,.dropdown-content::-webkit-scrollbar{
     display: none;
   }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  #main,.smallScr{
+  #main,.smallScr,.dropdown-content{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
@@ -297,6 +297,7 @@
 
   .dropdown-content{
     margin-left: 22px;
+    height: 50vh;
   }
   .dropbtn{
     margin-top: 20%;
