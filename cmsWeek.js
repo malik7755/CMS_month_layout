@@ -17,11 +17,62 @@ function getDayOfCurrentWeek(num) {
 
   function setDate(para){
     let allDates = document.querySelectorAll(".Date");
+    let mobDate = document.querySelectorAll(".mobDate");
     if(para=="prev") myDayNum = myDayNum-14;
     for(let i=0;i<allDates.length;i++){
        allDates[i].children[0].innerText=getDayOfCurrentWeek(myDayNum);
+    //    mobDate[i].children[0].innerText=getDayOfCurrentWeek(myDayNum);
+        if(i==0){
+            let monDate = document.querySelectorAll(".mon");
+            for(let j=0;j<monDate.length;j++){
+                monDate[j].innerText = allDates[i].children[0].innerText;
+            }
+        }
+
+        if(i==1){
+            let monDate = document.querySelectorAll(".tue");
+            for(let j=0;j<monDate.length;j++){
+                monDate[j].innerText = allDates[i].children[0].innerText;
+            }
+        }
+
+        if(i==2){
+            let monDate = document.querySelectorAll(".wed");
+            for(let j=0;j<monDate.length;j++){
+                monDate[j].innerText = allDates[i].children[0].innerText;
+            }
+        }
+
+        if(i==3){
+            let monDate = document.querySelectorAll(".thu");
+            for(let j=0;j<monDate.length;j++){
+                monDate[j].innerText = allDates[i].children[0].innerText;
+            }
+        }
+
+        if(i==4){
+            let monDate = document.querySelectorAll(".fri");
+            for(let j=0;j<monDate.length;j++){
+                monDate[j].innerText = allDates[i].children[0].innerText;
+            }
+        }
+        if(i==5){
+            let monDate = document.querySelectorAll(".sat");
+            for(let j=0;j<monDate.length;j++){
+                monDate[j].innerText = allDates[i].children[0].innerText;
+            }
+        }
+
+        if(i==6){
+            let monDate = document.querySelectorAll(".sun");
+            for(let j=0;j<monDate.length;j++){
+                monDate[j].innerText = allDates[i].children[0].innerText;
+            }
+        }
+
        myDayNum++;
     }
+
   }
 setDate("next");
 let leftArrow = document.querySelector(".leftArrow");
@@ -90,13 +141,13 @@ function changeBorder(){
 
 
     for(let i=0;i<mobDate.length;i++){
-        console.log(mobDate[i].children[2].innerText);
-        if(mobDate[i].children[2].innerText == " W"){
-            mobDate[i].children[2].style.borderBottom = "#e8c6c6 4px solid";
+        console.log(mobDate[i].children[1].innerText);
+        if(mobDate[i].children[1].innerText == "W"){
+            mobDate[i].children[1].style.borderBottom = "#e8c6c6 4px solid";
         }
 
-        if(mobDate[i].children[2].innerText == " O"){
-            mobDate[i].children[2].style.borderBottom = "#fe4200d1 4px solid";
+        if(mobDate[i].children[1].innerText == "O"){
+            mobDate[i].children[1].style.borderBottom = "#fe4200d1 4px solid";
         }
     }
 

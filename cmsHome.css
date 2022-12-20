@@ -5,67 +5,6 @@
 }
 
 
-.nav{
-    /* border: 2px solid black; */
-    height: 80px;
-    background-color: #dfe6e9;
-    display: flex;
-    width: 100%;
-    /* border: 2px solid black; */
-}
-
-.navLogo img{
-    height: 100%;
-    width: 100%;
-    margin-top: 15px;
-}
-
-.navLogo{
-    height: 50px;
-    width: 50px;
-    /* margin-top: 20px; */
-    /* border: 2px solid black; */
-    margin-left: 2%;
-
-}
-
-.cmsTag{
-    /* border: 2px solid black; */
-    width: 5%;
-    height: 35%;
-    margin-top: 2%;
-    text-align: center;
-    margin-left: 2%;
-    font-size: 1.5rem;
-}
-
-.btnDiv{
-    /* border: 2px solid black; */
-    width: 40%;
-    margin-left: 60%;
-    /* margin-right: 1%; */
-    display: flex;
-    justify-content: space-around;
-}
-
-
-.navBtn{
-    border:none;
-    background-color:skyblue;
-    color: black;
-    font-weight: bolder;
-    height:50%;
-    margin-top: 20px;
-    padding: 1% 3%;
-    cursor:pointer;
-    border-radius: 5px;
-}
-
-.navBtn a {
-    text-decoration: none;
-    color: black;
-}
-
 #piechart{
 /* border: 2px solid black; */
 

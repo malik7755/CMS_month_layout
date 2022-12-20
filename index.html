@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS</title>
     <link rel="stylesheet" href="cmsHome.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 <body>
     <div class="nav">
-        <div class="navLogo"><img src="logo.png" alt=""></div>
-        <div class="cmsTag">CMS</div>
+        <div class="navLogo"><img src="logo.png"  alt=""></div>
+        <a class="cmsTag" href="./index.html">CMS</a>
         <div class="btnDiv">
            <button class="navBtn"><a href="">Get CSV</a></button>
-           <button class="navBtn"><a href="">Get PDF</a></button>
-           <button class="navBtn"><a href="/cmsMonth">Month Layout</a></button>
-           <button class="navBtn"><a href="/cmsWeek">Week Layout</a></button>
+           <button class="navBtn"><a onClick="window.print()" href="">Get PDF</a></button>
+           <button class="navBtn"><a href="./cmsMonth.html">Month Layout</a></button>
+           <button class="navBtn"><a href="./cmsWeek.html">Week Layout</a></button>
 
         </div>
     </div>
