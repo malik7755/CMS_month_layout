@@ -47,7 +47,8 @@
     width: 90%;
     margin-left: 5%;
     margin-top: 10%;
-    background-color: #dfe6e9;
+    background-color: white;
+    border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
 }
@@ -99,7 +100,7 @@
 #editCont{
     width: 40%;
     height: 90vh;
-    /* border: 2px solid black; */
+    border-right: 2px solid #dfe6e9;
 }
 #container{
     display: flex;
