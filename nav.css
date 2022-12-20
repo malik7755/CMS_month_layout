@@ -50,7 +50,7 @@
 
 .navBtn{
     border:none;
-    background-color:skyblue;
+    /* background-color:skyblue; */
     color: black;
     font-weight: bolder;
     height:100%;
@@ -69,8 +69,12 @@
 @media screen and  (max-width:600px) {
 
         .btnDiv{
-            margin-left: 30%;
-            width: 49%;
+            margin-left: 20%;
+            width: 80%;
+        }
+        .navBtn{
+            font-size: 10px;
+            padding: 2%;
         }
         .nav{
             width: 100%;
