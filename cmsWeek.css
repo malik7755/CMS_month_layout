@@ -35,7 +35,7 @@
     /* border: 1px solid #000; */
     /* padding: 5%; */
     /* height: 100vh; */
-    height: 62%;
+    height: 52%;
     /* border: 2px solid black; */
     overflow-y:scroll;
     margin-bottom: 1.5%;
@@ -229,7 +229,19 @@
 
 
 
+.weekLabel{
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 16px;
+    font-style: bolder;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
 
+.formButton{
+    position: absolute;
+    top:10%;
+    display: none;
+}
 
 @media screen and (max-width:600px){
     .emp_main_Section{
@@ -272,6 +284,9 @@
     .Date{
         width: 20px;
         font-size: 12px;
+    }
+    .weekLabel{
+        margin-top: 8%;
     }
 
 }

@@ -84,11 +84,17 @@ rightArrow.addEventListener("click",handleRightArrow);
 
 function handleLeftArrow(){
     setDate("prev");
+    changeWeek();
+    document.querySelector(".formButton").click();
+
 }
    
 
 function handleRightArrow(){
     setDate("next");
+    changeWeek();
+    document.querySelector(".formButton").click();
+
 }
 
 
@@ -188,7 +194,28 @@ function myFunction(num) {
     }
   }
 
+let weekNum = document.querySelector(".weekNum");
+  function changeWeek(){
+    let lastDate = document.querySelector(".lastDate");
+    if(parseInt(lastDate.innerText.slice(3))<=7){
+        weekNum.innerText = "1";
+   
+    }
+    if(parseInt(lastDate.innerText.slice(3))>7){
+        weekNum.innerText = "2";
+   
+    }
+    if(parseInt(lastDate.innerText.slice(3))>14){
+        weekNum.innerText = "3";
+     
+    }
+    if(parseInt(lastDate.innerText.slice(3))>21){
+        weekNum.innerText = "4";
+   
+    }
 
+
+  }
   
-
+changeWeek();
   
