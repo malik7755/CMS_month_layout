@@ -236,6 +236,9 @@
     height: 100%;
   }
 
+  .submitBtn{
+    display: none;
+  }
 
 
 

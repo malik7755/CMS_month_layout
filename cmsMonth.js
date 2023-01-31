@@ -10,6 +10,7 @@ rightArrow.addEventListener("click",handleRightArrow);
 
 
 function handleLeftArrow(){
+    document.querySelector(".submitBtn").click();
     let date = document.querySelectorAll(".Date");
     for(let i=0;i<date.length;i++){
         date[i].children[0].innerText = previousMonth(currMonth);
@@ -22,9 +23,12 @@ function handleLeftArrow(){
     currMonth = previousMonth(currMonth);
    if(currMonth=="Dec") year = year-1;
     monthLabel.innerText = currMonth+" "+year;
+
+    
 }
 
 function handleRightArrow(){
+    document.querySelector(".submitBtn").click();
 let date = document.querySelectorAll(".Date");
 
    for(let i=0;i<date.length;i++){
