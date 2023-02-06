@@ -168,5 +168,6 @@ function myFunction(num) {
 
   function passData(backOrNext){
     let dataInput = document.querySelector(".dataStore");
-    dataInput.value = monthLabel.innerText+" "+backOrNext;
+    let monthData = monthLabel.innerText.split(" ");
+    dataInput.value = monthData[0]+"-"+monthData[1]+"-"+backOrNext;
   }

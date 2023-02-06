@@ -86,7 +86,7 @@ function handleLeftArrow(){
     setDate("prev");
     changeWeek();
     passDataWeek("back");
-    document.querySelector(".formButton").click();
+    // document.querySelector(".formButton").click();
 
 }
    
@@ -95,7 +95,7 @@ function handleRightArrow(){
     setDate("next");
     changeWeek();
     passDataWeek("next");
-    document.querySelector(".formButton").click();
+    // document.querySelector(".formButton").click();
 
 }
 
@@ -224,6 +224,25 @@ changeWeek();
 
 
 function passDataWeek(backOrNext){
+    let firstDate = document.querySelector(".Date").children[0].innerText;
+    firstDate = firstDate.split(" ")[1];
     let weekDataInput = document.querySelector(".weekDataStore");
-    weekDataInput.value = monthLabel.innerText+" "+backOrNext;
+    let monthNum = getMonthNum(monthLabel.innerText.split(" ")[0]);
+    weekDataInput.value = `${monthNum}-${year}-${firstDate}-${backOrNext}`;
+  }
+
+
+  function getMonthNum(month){
+    if(month=='Jan') return 1;
+    if(month=="Feb") return 2;
+    if(month=="Mar") return 3;
+    if(month=="Apr") return 4;
+    if(month=="May") return 5;
+    if(month=="Jun") return 6;
+    if(month=="Jul") return 7;
+    if(month=="Aug") return 8;
+    if(month=="Sep") return 9;
+    if(month=="Oct") return 10;
+    if(month=="Nov") return 11;
+    if(month=="Dec") return 12;
   }
