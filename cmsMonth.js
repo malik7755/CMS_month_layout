@@ -10,6 +10,7 @@ rightArrow.addEventListener("click",handleRightArrow);
 
 
 function handleLeftArrow(){
+    passData("back")
     document.querySelector(".submitBtn").click();
     let date = document.querySelectorAll(".Date");
     for(let i=0;i<date.length;i++){
@@ -28,6 +29,7 @@ function handleLeftArrow(){
 }
 
 function handleRightArrow(){
+    passData("next");
     document.querySelector(".submitBtn").click();
 let date = document.querySelectorAll(".Date");
 
@@ -145,3 +147,26 @@ function myFunction(num) {
 
 
   
+  function setCurrentMonth(){
+    const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+    const da = new Date();
+    let name = month[da.getMonth()];
+    console.log(name);
+    monthLabel.innerText = name+" "+year;
+    let date = document.querySelectorAll(".Date");
+
+   for(let i=0;i<date.length;i++){
+    date[i].children[0].innerText = name;
+   }
+    
+  }
+
+
+  setCurrentMonth();
+
+
+  function passData(backOrNext){
+    let dataInput = document.querySelector(".dataStore");
+    dataInput.value = monthLabel.innerText+" "+backOrNext;
+  }

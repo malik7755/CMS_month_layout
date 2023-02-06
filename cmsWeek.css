@@ -243,6 +243,10 @@
     display: none;
 }
 
+.weekDataStore{
+    display: none;
+}
+
 @media screen and (max-width:600px){
     .emp_main_Section{
         display: none;

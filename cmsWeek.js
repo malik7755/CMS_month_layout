@@ -85,6 +85,7 @@ rightArrow.addEventListener("click",handleRightArrow);
 function handleLeftArrow(){
     setDate("prev");
     changeWeek();
+    passDataWeek("back");
     document.querySelector(".formButton").click();
 
 }
@@ -93,6 +94,7 @@ function handleLeftArrow(){
 function handleRightArrow(){
     setDate("next");
     changeWeek();
+    passDataWeek("next");
     document.querySelector(".formButton").click();
 
 }
@@ -219,3 +221,9 @@ let weekNum = document.querySelector(".weekNum");
   
 changeWeek();
   
+
+
+function passDataWeek(backOrNext){
+    let weekDataInput = document.querySelector(".weekDataStore");
+    weekDataInput.value = monthLabel.innerText+" "+backOrNext;
+  }
