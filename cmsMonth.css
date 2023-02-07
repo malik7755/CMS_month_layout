@@ -227,6 +227,7 @@
     position: fixed;
     top: 96%;
     width: 100%;
+    background-color: whitesmoke;
 }
 
   .cont{
@@ -242,6 +243,10 @@
   }
   .dataStore{
     display: none;
+  }
+
+  #main{
+    height: 62%;
   }
 
 
@@ -271,7 +276,7 @@
         
     }
     .info{
-        margin-top: -35%;
+        /* margin-top: -35%; */
     }
 
     .usInfo, .ukInfo, .present, .out_office, .weekend{
