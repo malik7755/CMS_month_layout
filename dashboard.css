@@ -105,12 +105,12 @@
 #container{
     display: flex;
 }
-#main::-webkit-scrollbar ,.smallScr::-webkit-scrollbar,.dropdown-content::-webkit-scrollbar{
+#main::-webkit-scrollbar ,.smallScrDashDash::-webkit-scrollbar,.dropdown-content::-webkit-scrollbar{
     display: none;
   }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  #main,.smallScr,.dropdown-content{
+  #main,.smallScrDashDash,.dropdown-content{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
@@ -120,7 +120,7 @@
     cursor: pointer;
 }
 
-.monthLabel{
+.monthLabelDash{
     font-size: 1.5rem;
     /* background-color: #2d3436; */
     color:black;
@@ -130,14 +130,14 @@
    
 }
 
-#month_pre_next {
+#month_pre_next_dashboard {
     /* border: 1px solid rgb(255, 0, 0); */
     text-align: center;
     margin-bottom: 2%;
     margin-top: 3%;
 }
 
-#Date_Section_Main {
+#Date_Section_MainDash {
     /* border:2px solid black; */
     margin-bottom: 2%;
     /* border: 1px solid rgb(17, 0, 255); */
@@ -187,7 +187,7 @@
     
     /* justify-content: flex-start; */
 }
-.Emp_title {
+.Emp_titleDash {
     /* border: 1px solid rgb(7, 7, 7); */
     width: 200px;
     height: 20px;
@@ -231,7 +231,7 @@
 }
 
 
-.dropbtn {
+.dropbtnDash {
     /* background-color: #3498DB;  */
     /* color: white;
     padding: 16px;
@@ -247,11 +247,11 @@
 
   }
   
-  .dropbtn:hover, .dropbtn:focus {
+  .dropbtnDash:hover, .dropbtnDash:focus {
     /* background-color: #2980B9; */
   }
   
-  .dropdown {
+  .dropdownDash {
     /* position: relative;
     display: inline-block;
     margin-left: 22%;
@@ -259,7 +259,7 @@
  
   }
   
-  .dropdown-content {
+  .dropdownDash-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -269,23 +269,23 @@
     z-index: 1;
   }
   
-  .dropdown-content a {
+  .dropdownDash-content a {
     color: black;
     padding: 20px 18px;
     text-decoration: none;
     display: block;
   }
 
-  .myDropdown{
+  .myDropdownDash{
     margin-left: 7px;
     width: 207px; 
   }
   
-  .dropdown a:hover {background-color: #ddd;}
+  .dropdownDash a:hover {background-color: #ddd;}
   
   .show {display: block;}
 
-  .smallScr{
+  .smallScrDash{
     /* display: none; */
     display: flex;
     justify-content:space-evenly;
@@ -295,17 +295,17 @@
     padding-bottom: 5%;
   }
 
-  .dropdown-content{
+  .dropdownDash-content{
     margin-left: 22px;
     height: 50vh;
   }
-  .dropbtn{
+  .dropbtnDash{
     margin-top: 20%;
     margin-left: 12%;
   }
  
 
-  .dropdown {
+  .dropdownDash {
     position: relative;
     display: inline-block;
     /* margin-left: 22%; */
@@ -319,14 +319,14 @@
   }
 
 
-  .mobDate span:nth-child(3){
+  .mobDateDash span:nth-child(3){
     margin-left: 30%;
     border-bottom: green 4px solid;
     padding: 0 5px;
 }
 
 
-.mobDate span:nth-child(4){
+.mobDateDash span:nth-child(4){
     margin-left: 15%;
     cursor: pointer;
     

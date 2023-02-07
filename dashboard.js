@@ -1,8 +1,8 @@
 let leftArrow = document.querySelector(".leftArrow");
 let rightArrow = document.querySelector(".rightArrow");
-let currMonth = document.querySelector(".mobDate").children[0].innerText;
+let currMonth = document.querySelector(".mobDateDash").children[0].innerText;
 
-let monthLabel = document.querySelector(".monthLabel");
+let monthLabel = document.querySelector(".monthLabelDash");
 const d = new Date();
 let year = d.getFullYear();
 leftArrow.addEventListener("click",handleLeftArrow);
@@ -15,7 +15,7 @@ function handleLeftArrow(){
     for(let i=0;i<date.length;i++){
         date[i].children[0].innerText = previousMonth(currMonth);
     }
-    let mobMonth = document.querySelectorAll(".mobDate")
+    let mobMonth = document.querySelectorAll(".mobDateDash")
 
     for(let i=0;i<mobMonth.length;i++){
         mobMonth[i].children[0].innerText = previousMonth(currMonth);
@@ -32,7 +32,7 @@ let date = document.querySelectorAll(".Date");
     date[i].children[0].innerText = nextMonth(currMonth);
    }
 
-   let mobMonth = document.querySelectorAll(".mobDate")
+   let mobMonth = document.querySelectorAll(".mobDateDash")
 
     for(let i=0;i<mobMonth.length;i++){
         mobMonth[i].children[0].innerText = nextMonth(currMonth);
@@ -79,7 +79,7 @@ function previousMonth(month){
 
 function changeBorder(){
     let empStatus = document.querySelectorAll(".emp_status");
-    let mobDate = document.querySelectorAll(".mobDate");
+    let mobDate = document.querySelectorAll(".mobDateDash");
 
      for(let i=0;i<empStatus.length;i++){
         if(empStatus[i].innerText=="W"){
@@ -118,7 +118,7 @@ changeBorder();
 toggle between hiding and showing the dropdown content */
 function myFunction(num) {
     console.log(num)
-    let myDropdown = document.querySelectorAll(".myDropdown");
+    let myDropdown = document.querySelectorAll(".myDropdownDash");
     // document.querySelectorAll(".myDropdown")[num].classList.toggle("show");
     for(let i=0;i<myDropdown.length;i++){
         if(i==num){
@@ -131,8 +131,8 @@ function myFunction(num) {
   
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
+    if (!event.target.matches('.dropbtnDash')) {
+      var dropdowns = document.getElementsByClassName("dropdownDash-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
