@@ -142,6 +142,3 @@ function myFunction(num) {
       }
     }
   }
-
-
-  
