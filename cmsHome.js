@@ -1,5 +1,5 @@
 function myFunction11() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown11").classList.toggle("show");
   }
   
   // Close the dropdown if the user clicks outside of it
@@ -17,7 +17,7 @@ function myFunction11() {
   }
 
   function myFunction12() {
-    document.getElementById("myDropdown1").classList.toggle("show");
+    document.getElementById("myDropdown12").classList.toggle("show");
   }
   
   // Close the dropdown if the user clicks outside of it
