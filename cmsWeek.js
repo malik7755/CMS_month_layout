@@ -1,7 +1,7 @@
 let myDayNum = 1;
 let year = "";
 let month = "";
-let monthLabel = document.querySelector(".monthLabel");
+let monthLabel = document.querySelector(".monthLabel1");
 function getDayOfCurrentWeek(num) {
     const today = new Date();
     const first = today.getDate() - today.getDay() + num;
@@ -16,8 +16,8 @@ function getDayOfCurrentWeek(num) {
 
 
   function setDate(para){
-    let allDates = document.querySelectorAll(".Date");
-    let mobDate = document.querySelectorAll(".mobDate");
+    let allDates = document.querySelectorAll(".Date1");
+    let mobDate = document.querySelectorAll(".mobDateWeek");
     if(para=="prev") myDayNum = myDayNum-14;
     for(let i=0;i<allDates.length;i++){
        allDates[i].children[0].innerText=getDayOfCurrentWeek(myDayNum);
@@ -86,7 +86,7 @@ function handleLeftArrow(){
     setDate("prev");
     changeWeek();
     passDataWeek("back");
-    // document.querySelector(".formButton").click();
+    document.querySelector(".formButton1").click();
 
 }
    
@@ -95,7 +95,7 @@ function handleRightArrow(){
     setDate("next");
     changeWeek();
     passDataWeek("next");
-    // document.querySelector(".formButton").click();
+    document.querySelector(".formButton1").click();
 
 }
 
@@ -134,8 +134,8 @@ function previousMonth(month){
 
 
 function changeBorder(){
-    let empStatus = document.querySelectorAll(".emp_status");
-    let mobDate = document.querySelectorAll(".mobDate");
+    let empStatus = document.querySelectorAll(".emp_status1");
+    let mobDate = document.querySelectorAll(".mobDateWeek");
 
      for(let i=0;i<empStatus.length;i++){
         if(empStatus[i].innerText=="W"){
@@ -171,7 +171,7 @@ changeBorder();
 toggle between hiding and showing the dropdown content */
 function myFunction(num) {
     console.log(num)
-    let myDropdown = document.querySelectorAll(".myDropdown");
+    let myDropdown = document.querySelectorAll(".myDropdown1");
     // document.querySelectorAll(".myDropdown")[num].classList.toggle("show");
     for(let i=0;i<myDropdown.length;i++){
         if(i==num){
@@ -184,8 +184,8 @@ function myFunction(num) {
   
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
+    if (!event.target.matches('.dropbtn1')) {
+      var dropdowns = document.getElementsByClassName("dropdown1-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
@@ -224,7 +224,7 @@ changeWeek();
 
 
 function passDataWeek(backOrNext){
-    let firstDate = document.querySelector(".Date").children[0].innerText;
+    let firstDate = document.querySelector(".Date1").children[0].innerText;
     firstDate = firstDate.split(" ")[1];
     let weekDataInput = document.querySelector(".weekDataStore");
     let monthNum = getMonthNum(monthLabel.innerText.split(" ")[0]);
