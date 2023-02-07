@@ -1,4 +1,4 @@
-function myFunction() {
+function myFunction11() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
@@ -16,7 +16,7 @@ function myFunction() {
     }
   }
 
-  function myFunction1() {
+  function myFunction12() {
     document.getElementById("myDropdown1").classList.toggle("show");
   }
   

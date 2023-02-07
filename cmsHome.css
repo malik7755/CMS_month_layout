@@ -14,7 +14,7 @@ margin-top: 5%;
 
 
 
-.dropbtn {
+.dropbtn2 {
     background-color: #3498DB;
     color: white;
     padding: 16px;
@@ -25,17 +25,17 @@ margin-top: 5%;
     width: 155%;
   }
   
-  .dropbtn:hover, .dropbtn:focus {
+  .dropbtn2:hover, .dropbtn2:focus {
     background-color: #2980B9;
   }
   
-  .dropdown {
+  .dropdown2 {
     position: relative;
     display: inline-block;
     width: 150px;
   }
   
-  .dropdown-content {
+  .dropdown2-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -45,14 +45,14 @@ margin-top: 5%;
     z-index: 1;
   }
   
-  .dropdown-content a {
+  .dropdown2-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown a:hover {background-color: #ddd;}
+  .dropdown2 a:hover {background-color: #ddd;}
   
   .show {display: block;}
 
@@ -77,7 +77,7 @@ margin-top: 5%;
     border-radius: 5px;
   }
 
-  .dropdown-content{
+  .dropdown2-content{
     width: 150px;
   }
 
