@@ -83,18 +83,18 @@ rightArrow.addEventListener("click",handleRightArrow);
 
 
 function handleLeftArrow(){
+    passDataWeek("back");
     setDate("prev");
     changeWeek();
-    passDataWeek("back");
     document.querySelector(".formButton1").click();
 
 }
    
 
 function handleRightArrow(){
+    passDataWeek("next");
     setDate("next");
     changeWeek();
-    passDataWeek("next");
     document.querySelector(".formButton1").click();
 
 }
