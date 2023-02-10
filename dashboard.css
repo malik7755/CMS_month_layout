@@ -24,7 +24,6 @@
 
 }
 .info{
-    margin-left: 44%;
     margin-top: -2%;
 }
 .weekend{
@@ -98,7 +97,7 @@
 
     /* border: 2px solid red; */
     height: 90vh;
-    width: 60%;
+    width: 100%;
 }
 #editCont{
     width: 40%;
