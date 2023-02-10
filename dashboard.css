@@ -294,7 +294,14 @@
     padding-right: 3%;
     padding-bottom: 5%;
   }
-
+  .smallScrDash::-webkit-scrollbar{
+    display: none;
+  }
+  .smallScrDash {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
   .dropdownDash-content{
     margin-left: 22px;
     height: 50vh;
