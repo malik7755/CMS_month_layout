@@ -11,6 +11,7 @@ rightArrow.addEventListener("click",handleRightArrow);
 
 
 function handleLeftArrow(){
+    passData("prev");
     let date = document.querySelectorAll(".Date");
     for(let i=0;i<date.length;i++){
         date[i].children[0].innerText = previousMonth(currMonth);
@@ -23,9 +24,12 @@ function handleLeftArrow(){
     currMonth = previousMonth(currMonth);
    if(currMonth=="Dec") year = year-1;
     monthLabel.innerText = currMonth+" "+year;
+ 
 }
 
 function handleRightArrow(){
+   passData("next");
+
 let date = document.querySelectorAll(".Date");
 
    for(let i=0;i<date.length;i++){
@@ -43,6 +47,14 @@ let date = document.querySelectorAll(".Date");
 
 }
 
+
+let dataInput = document.querySelector(".dashboardInput");
+let formBtn = document.querySelector(".dashboardFormBtn");
+function passData(backOrNext){
+    let monthData = monthLabel.innerText.split(" ");
+    dataInput.value = monthData[0]+"-"+monthData[1]+"-"+backOrNext;
+    formBtn.click();
+  }
 
 
 function nextMonth(month){

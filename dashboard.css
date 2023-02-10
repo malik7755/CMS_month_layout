@@ -41,6 +41,9 @@
     color: rgb(235, 157, 12);
 
 }
+.dashboardForm{
+    display: none;
+}
 .updateCard{
     /* border: 2px solid black;2 */
     height: 50%;
